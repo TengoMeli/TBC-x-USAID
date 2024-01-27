@@ -1,0 +1,215 @@
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+
+body {
+    font-family: "Noto Sans Georgian", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header, #headingTxt,  #courses, #gridContainer, #question-container, #slideShowContainer {
+    padding: 0 18%;    
+}
+
+/* Header Styles */
+
+header {
+    background-color: #1b1b1b;
+    opacity: 0.95;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.simplecont {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+#logoRight {
+    margin-right: auto;
+}
+
+#logoImg {
+    height: 200px;
+}
+
+#usaxId {
+    color: rgb(69, 172, 223);
+}
+
+a:hover {
+    color: rgb(69, 172, 223);
+}
+
+span {
+    text-transform: uppercase;
+}
+
+/* Dropdown Button Styles */
+
+.dropbtn {
+    background: none;
+    color: rgb(69, 172, 223);
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    color: #717171;
+}
+
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background: none;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdownContent .dropcont {
+    color: #ffffff;
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropcont:hover {
+    color: rgb(69, 172, 223);
+}
+
+.show {
+    display: block;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #1d2020;
+    height: auto;
+    padding: 60px 18%;
+    margin-top: 80px;
+}
+
+#end {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#contact {
+    text-align: right;
+}
+
+#footerLogo {
+    display: block;
+    width: 100px;
+}
+
+#facebook, #youtube {
+    margin: 0 2px 0 0;
+}
+
+.contactIcon {
+    width: 40px;
+}
+
+#contactUs {
+    font-size: 17px;
+    padding: 10px 35px;
+    background-color: rgb(69, 172, 223);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#contactUs:hover {
+    background-color: #b3aeae;
+    color: #000000;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (max-width: 750px) {
+    #simpleMenu {
+        display: none;
+    }
+    #gridContainer {
+        grid-template-columns: 300px;
+    }
+    header, #courses, #gridContainer, #question-container, #slideShowContainer {
+        padding: 0 10px;    
+    }
+    #headingTxt {
+        padding: 155px 20px;
+    }
+    #introduction {
+        padding: 20px;
+    }
+    .questionBtn {
+        width: auto;
+    }
+}
+
+@media (min-width: 751px) and (max-width:999px) {
+    #dropdown {
+        display: none;
+    }
+    #gridContainer {
+        grid-template-columns: 300px 300px;
+    }
+    header, #courses, #gridContainer, #question-container, #slideShowContainer {
+        padding: 0 20px;    
+    }
+    #headingTxt {
+        padding: 155px 20px;
+    }
+
+    #introduction {
+        padding: 20px;
+    }
+    .questionBtn {
+        width: 700px;
+    }
+}
+
+@media (min-width:1000px) {
+    #gridContainer {
+        grid-template-columns: 300px 300px 300px;
+    }
+    #dropdown {
+        display: none;
+    }
+    #headingTxt {
+        padding: 155px 18%;
+    }
+}
