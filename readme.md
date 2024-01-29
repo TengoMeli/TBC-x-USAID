@@ -34,8 +34,7 @@ Usage
 
     1. Clone the repository:
 
-    git clone https://github.com/your-username/tbc-usaid-website.git
-    cd tbc-usaid-website
+    git clone https://github.com/TengoMeli/TBC-x-USAID.git
 
     1. Open the index.html file in a web browser to view the website.
 
